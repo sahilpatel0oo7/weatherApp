@@ -35,7 +35,10 @@ async function checkWeather(city){
         }else if(data.weather[0].main = 'Haze'){
             weatherIcon.src = "images/haze.png"
         };
-    
+
+
+        document.querySelector(".error").style.display = "none"
+
         document.querySelector('.hide').style.display = 'block';
     
     }
