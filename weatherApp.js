@@ -47,3 +47,8 @@ searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
 })
 
+document.querySelector('.header input').addEventListener('keyup', function(event){
+    if (event.key === 'Enter'){
+        checkWeather(searchBox.value);
+    }
+})
